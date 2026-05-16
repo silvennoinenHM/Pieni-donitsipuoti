@@ -21,6 +21,15 @@ body {
   display: flex;
   justify-content: center;
   gap: 40px;
+  <script>
+  const menuBtn = document.querySelector('.menu-toggle');
+  const navLinks = document.querySelector('.nav-links');
+
+  menuBtn.addEventListener('click', () => {
+    navLinks.classList.toggle('show');
+  });
+</script>
+
   padding: 0;
   margin: 0;
 }
