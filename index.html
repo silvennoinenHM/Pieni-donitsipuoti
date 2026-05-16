@@ -1,18 +1,16 @@
 <!DOCTYPE html>
 <html lang="fi">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Pieni Donitsipuoti</title>
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pieni Donitsipuoti</title>
 
-<!-- Vintage fontti -->
-<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-<!-- NAVIGAATIO -->
 <header>
   <nav class="navbar">
     <div class="nav-brand">Pieni Donitsipuoti</div>
@@ -28,61 +26,24 @@
   </nav>
 </header>
 
-
-<!-- OTSIKKO SATEENKAARELLA (SVG) -->
-<div class="title-arc">
-  <svg viewBox="0 0 500 200">
-    <path id="curve" d="M 50 150 Q 250 10 450 150" fill="transparent"/>
-    <text width="500">
-      <textPath href="#curve" startOffset="50%" text-anchor="middle">
-        Pieni Donitsipuoti
-      </textPath>
-    </text>
-  </svg>
-</div>
-
-<!-- KOUKERO VIIVA -->
-<div class="swirl">❧❦❧</div>
-
 <!-- DONITSISADE -->
-<div class="scrunchie-rain">
-  <img src="Scrunchie1.png" class="scrunchie s1">
-  <img src="Scrunchie2.png" class="scrunchie s2">
-  <img src="Scrunchie3.png" class="scrunchie s3">
-  <img src="Scrunchie4.png" class="scrunchie s4">
-  <img src="Scrunchie1.png" class="scrunchie s5">
-  <img src="Scrunchie2.png" class="scrunchie s6">
-  <img src="Scrunchie3.png" class="scrunchie s7">
-  <img src="Scrunchie4.png" class="scrunchie s8">
-  <img src="Scrunchie1.png" class="scrunchie s9">
-  <img src="Scrunchie2.png" class="scrunchie s10">
-  <img src="Scrunchie3.png" class="scrunchie s11">
-  <img src="Scrunchie4.png" class="scrunchie s12">
-  <img src="Scrunchie1.png" class="scrunchie s13">
-  <img src="Scrunchie2.png" class="scrunchie s14">
-  <img src="Scrunchie3.png" class="scrunchie s15">
-  <img src="Scrunchie4.png" class="scrunchie s16">
-  <img src="Scrunchie1.png" class="scrunchie s17">
-  <img src="Scrunchie2.png" class="scrunchie s18">
-  <img src="Scrunchie3.png" class="scrunchie s19">
-  <img src="Scrunchie4.png" class="scrunchie s20">
+<div class="donitsi-sade">
+  <img src="Scrunchie1.png" class="donitsi d1">
+  <img src="Scrunchie2.png" class="donitsi d2">
+  <img src="Scrunchie3.png" class="donitsi d3">
 </div>
 
-<!-- HERO-KUVA -->
-<div class="hero-container">
-  <img src="back-view-girl-dress-with-bow-her-hair-gray-background.jpg" class="hero-image">
-</div>
+<!-- HERO -->
+<section class="hero">
+  <h1 class="hero-title">Pieni Donitsipuoti</h1>
+  <p class="hero-subtitle">Käsintehtyjä hiusdonitseja rakkaudella</p>
+  <a href="gallery.html" class="hero-btn">Tutustu tuotteisiin</a>
+</section>
 
-<!-- SISÄLTÖ -->
-<div class="box">
-  <h2>Tervetuloa!</h2>
-  <p>Pieni Donitsipuoti – käsintehtyjen hiusdonitsien koti.</p>
-</div>
-
-<!-- FOOTER -->
 <footer class="footer">
   <p>Pieni Donitsipuoti © 2024</p>
 </footer>
+
 <script>
   const menuBtn = document.querySelector('.menu-toggle');
   const navLinks = document.querySelector('.nav-links');
