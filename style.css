@@ -374,3 +374,87 @@ h2, h3 {
     display: block;
   }
 }
+/* ------------------------------
+   ETUSIVU: HERO + DONITSISADE
+--------------------------------*/
+
+/* Donitsisade */
+.donitsi-sade img {
+  position: fixed;
+  top: -150px;
+  width: 80px;
+  animation: fall linear infinite;
+  z-index: 1;
+  opacity: 0.9;
+}
+
+@keyframes fall {
+  0% { transform: translateY(-150px) rotate(0deg); }
+  100% { transform: translateY(120vh) rotate(360deg); }
+}
+
+.d1 { left: 10vw; animation-duration: 7s; }
+.d2 { left: 50vw; animation-duration: 5s; }
+.d3 { left: 80vw; animation-duration: 6s; }
+
+/* HERO-ALUE */
+.hero {
+  text-align: center;
+  padding: 80px 20px;
+  position: relative;
+  z-index: 10;
+}
+
+/* Kaareva otsikko */
+.hero-title {
+  font-family: 'Great Vibes', cursive;
+  font-size: 70px;
+  color: #c06b8e;
+  margin-bottom: 10px;
+  transform: rotate(-6deg);
+  text-shadow: 2px 2px 0 #fff;
+}
+
+/* Hero-kuva (jos lisäät sen HTML:ään) */
+.hero-img {
+  width: 100%;
+  max-width: 450px;
+  margin: 20px auto;
+  display: block;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+/* Alaotsikko */
+.hero-subtitle {
+  font-size: 22px;
+  color: #a14d4d;
+  margin-top: 10px;
+}
+
+/* Nappi */
+.hero-btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 28px;
+  background: #c06b8e;
+  color: white;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.hero-btn:hover {
+  background: #a85775;
+}
+
+/* Mobiili */
+@media (max-width: 600px) {
+  .hero-title {
+    font-size: 48px;
+  }
+  .hero-img {
+    max-width: 80%;
+  }
+}
