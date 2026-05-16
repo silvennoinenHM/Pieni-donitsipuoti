@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ota yhteyttä – Pieni Donitsipuoti</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<header>
+  <nav class="navbar">
+    <div class="nav-brand">Pieni Donitsipuoti</div>
+
+    <button class="menu-toggle" aria-label="Valikko">☰</button>
+
+    <ul class="nav-links">
+      <li><a href="index.html">Etusivu</a></li>
+      <li><a href="about.html">Keitä me olemme</a></li>
+      <li><a href="gallery.html">Galleria</a></li>
+      <li><a href="contact.html">Ota yhteyttä</a></li>
+    </ul>
+  </nav>
+</header>
+
+
+<h1 class="curved-title">Ota yhteyttä</h1>
+<div class="swirl">❧❦❧</div>
+
+<!-- LIIKKUVA DONITSI -->
+<img src="Scrunchie1.png" class="floating-donut">
+
+<div class="contact-box">
+  <form class="contact-form">
+    <label>Nimi</label>
+    <input type="text" required>
+
+    <label>Sähköposti</label>
+    <input type="email" required>
+
+    <label>Viesti</label>
+    <textarea required></textarea>
+
+    <button type="submit" class="send-btn">Lähetä viesti</button>
+  </form>
+</div>
+
+<footer class="footer">
+  <p>Pieni Donitsipuoti © 2024</p>
+</footer>
+<script>
+  const menuBtn = document.querySelector('.menu-toggle');
+  const navLinks = document.querySelector('.nav-links');
+
+  menuBtn.addEventListener('click', () => {
+    navLinks.classList.toggle('show');
+  });
+</script>
+
+</body>
+</html>

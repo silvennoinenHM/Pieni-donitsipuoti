@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Keitä me olemme – Pieni Donitsipuoti</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Oma CSS -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- NAVIGAATIO -->
+<header>
+ <header>
+  <nav class="navbar">
+    <div class="nav-brand">Pieni Donitsipuoti</div>
+
+    <button class="menu-toggle" aria-label="Valikko">☰</button>
+
+    <ul class="nav-links">
+      <li><a href="index.html">Etusivu</a></li>
+      <li><a href="about.html">Keitä me olemme</a></li>
+      <li><a href="gallery.html">Galleria</a></li>
+      <li><a href="contact.html">Ota yhteyttä</a></li>
+    </ul>
+  </nav>
+</header>
+
+</header>
+
+<main>
+
+<!-- ABOUT HERO -->
+<div class="about-wrapper">
+  <img src="young-woman-wearing-handkerchief-as-hair-accessory.jpg" class="about-img">
+
+  <div class="about-box">
+    <h2>Keitä me olemme</h2>
+    <p>
+      Pieni Donitsipuoti syntyi rakkaudesta käsityöhön ja kauniisiin yksityiskohtiin.
+      Valmistamme jokaisen hiusdonitsin huolella, laadukkaista materiaaleista ja
+      ajatuksella siitä, että pieni yksityiskohta voi tehdä päivästä erityisen.
+    </p>
+  </div>
+</div>
+
+
+<!-- BOOTSTRAP-OSIO (tasaiset kortit + popup-linkit + vaaleanharmaa Lue lisää) -->
+<div class="container my-5">
+
+  <h3 class="text-center mb-4">Suosituimmat donitsimme</h3>
+
+  <div class="row">
+
+    <!-- Velvet -->
+    <div class="col-md-4 col-12 mb-4">
+      <div class="card">
+        <img src="Scrunchie1.png" class="card-img-top" alt="Velvet">
+        <div class="card-body">
+          <h5 class="card-title">Velvet</h5>
+          <p class="card-text">Yö kätkee tuhansia tarinoita – ole osa tarinaa.</p>
+          <a href="gallery.html#scr1" class="btn-readmore">Ihaile läheltä</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Sky Candyfloss -->
+    <div class="col-md-4 col-12 mb-4">
+      <div class="card">
+        <img src="Scrunchie2.png" class="card-img-top" alt="Sky Candyfloss">
+        <div class="card-body">
+          <h5 class="card-title">Sky Candyfloss</h5>
+          <p class="card-text">Makea kuin hattara, suloinen kuin kirkas taivas.</p>
+          <a href="gallery.html#scr2" class="btn-readmore">Ihaile läheltä</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Golden Hour -->
+    <div class="col-md-4 col-12 mb-4">
+      <div class="card">
+        <img src="Scrunchie3.png" class="card-img-top" alt="Golden Hour">
+        <div class="card-body">
+          <h5 class="card-title">Golden Hour</h5>
+          <p class="card-text">Lämmin sävy, joka vangitsee päivän kauneimman hetken.</p>
+          <a href="gallery.html#scr3" class="btn-readmore">Ihaile läheltä</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="alert alert-info mt-4" role="alert">
+    Pieni Donitsipuoti – jokainen donitsi on käsintehty rakkaudella.
+  </div>
+
+</div>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <p>Pieni Donitsipuoti © 2024</p>
+</footer>
+
+<!-- Bootstrap JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  const menuBtn = document.querySelector('.menu-toggle');
+  const navLinks = document.querySelector('.nav-links');
+
+  menuBtn.addEventListener('click', () => {
+    navLinks.classList.toggle('show');
+  });
+</script>
+
+</body>
+</html>
