@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="fi">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Ota yhteyttä – Pieni Donitsipuoti</title>
-<link rel="stylesheet" href="style.css">
-<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ota yhteyttä – Pieni Donitsipuoti</title>
+
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -25,38 +26,35 @@
   </nav>
 </header>
 
+<main>
 
-<h1 class="curved-title">Ota yhteyttä</h1>
-<div class="swirl">❧❦❧</div>
+<h2 class="gallery-title">Ota yhteyttä</h2>
 
-<!-- LIIKKUVA DONITSI -->
-<img src="Scrunchie1.png" class="floating-donut">
+<div class="gallery-container" style="max-width:500px; margin:auto;">
 
-<div class="contact-box">
-  <form class="contact-form">
-    <label>Nimi</label>
-    <input type="text" required>
+  <label>Nimi</label>
+  <input type="text" style="padding:10px; border-radius:8px; border:1px solid #ccc; width:100%;">
 
-    <label>Sähköposti</label>
-    <input type="email" required>
+  <label style="margin-top:15px;">Sähköposti</label>
+  <input type="email" style="padding:10px; border-radius:8px; border:1px solid #ccc; width:100%;">
 
-    <label>Viesti</label>
-    <textarea required></textarea>
+  <label style="margin-top:15px;">Viesti</label>
+  <textarea style="padding:10px; border-radius:8px; border:1px solid #ccc; width:100%; height:120px;"></textarea>
 
-    <button type="submit" class="send-btn">Lähetä viesti</button>
-  </form>
+  <button class="add-cart" style="margin-top:20px;">Lähetä</button>
+
 </div>
+
+</main>
 
 <footer class="footer">
   <p>Pieni Donitsipuoti © 2024</p>
 </footer>
+
 <script>
   const menuBtn = document.querySelector('.menu-toggle');
   const navLinks = document.querySelector('.nav-links');
-
-  menuBtn.addEventListener('click', () => {
-    navLinks.classList.toggle('show');
-  });
+  menuBtn.addEventListener('click', () => navLinks.classList.toggle('show'));
 </script>
 
 </body>
